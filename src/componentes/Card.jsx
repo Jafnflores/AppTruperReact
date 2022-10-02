@@ -11,36 +11,36 @@ const cardas = {height: "100"}
 function Card() {
   return (
      
-  <><div class="row"> 
-    <div class="col-4 text-center" style={divs}>
-          <div class="card" style={cardas}>
+  <><div className="row"> 
+    <div className="col-4 text-center" style={divs}>
+          <div className="card" style={cardas}>
              
-              <div class="card-body">
-                  <h5 class="card-title">Alta de Sucursal</h5>
-                  <p class="card-text">Forma para el alta de nuevos Sucursales.</p>
-                  <a href="/FormaSucursal" class="btn btn-primary">Ir al formulario</a>
+              <div className="card-body">
+                  <h5 className="card-title">Alta de Sucursal</h5>
+                  <p className="card-text">Forma para el alta de nuevos Sucursales.</p>
+                  <a href="/FormaSucursal" className="btn btn-primary">Ir al formulario</a>
               </div>
           </div>
       </div>
 
-      <div class="col-4 text-center" style={divs}>
-          <div class="card" style={cardas}>
+      <div className="col-4 text-center" style={divs}>
+          <div className="card" style={cardas}>
              
-              <div class="card-body">
-                  <h5 class="card-title">Alta de Producto</h5>
-                  <p class="card-text">Forma para el alta de nuevos Sucursales.</p>
-                  <a href="/formaProducto" class="btn btn-primary">Ir al formulario</a>
+              <div className="card-body">
+                  <h5 className="card-title">Alta de Producto</h5>
+                  <p className="card-text">Forma para el alta de nuevos Sucursales.</p>
+                  <a href="/formaProducto" className="btn btn-primary">Ir al formulario</a>
               </div>
           </div>
       </div>
 
-      <div class="col-4 text-center" style={divs}>
-          <div class="card" style={cardas}>
+      <div className="col-4 text-center" style={divs}>
+          <div className="card" style={cardas}>
              
-              <div class="card-body">
-                  <h5 class="card-title">Alta de Sucursal</h5>
-                  <p class="card-text">Forma para el alta de nuevos Sucursales.</p>
-                  <a href="/formaOrden" class="btn btn-primary">Ir al formulario</a>
+              <div className="card-body">
+                  <h5 className="card-title">Alta de Sucursal</h5>
+                  <p className="card-text">Forma para el alta de nuevos Sucursales.</p>
+                  <a href="/formaOrden" className="btn btn-primary">Ir al formulario</a>
               </div>
           </div>
       </div>

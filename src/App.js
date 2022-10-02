@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
     <Nav></Nav>
-    <div class="container">
+    <div className="container">
     
     
     <BrowserRouter>

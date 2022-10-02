@@ -33,20 +33,20 @@ export class FormSucursal extends Component {
         const{nombre} = this.state
     return (
        <form onSubmit={this.submitHandler}>
-        <div class="row" style={divs}>
+        <div className="row" style={divs}>
             
-        <div class="col-12 text-center">
+        <div className="col-12 text-center">
                <h1>Alta de Sucursal</h1>
             </div>
        
-            <div class="col-12 text-center" style={divs2}>
+            <div className="col-12 text-center" style={divs2}>
                <label>
                 Sucursal:
                 <input type="text" name="nombre" value={nombre} onChange={this.changeHandler} />
                 </label>
             </div>
        
-            <div class="col-12 text-center" style={divs2}>
+            <div className="col-12 text-center" style={divs2}>
               <input type="submit" value="Dar Alta" />
             </div>
        

@@ -35,27 +35,27 @@ export class FormProducto extends Component {
         const{codigo,descripcion,precio} = this.state
     return (
        <form onSubmit={this.submitHandler}>
-        <div class="row" style={divs}>
+        <div className="row" style={divs}>
             
-        <div class="col-12 text-center">
+        <div className="col-12 text-center">
                <h1>Alta de Producto</h1>
             </div>
        
-            <div class="col-12 text-center" style={divs2}>
+            <div className="col-12 text-center" style={divs2}>
                <label>
                 Codigo:
                 <input type="text" name="codigo" value={codigo} onChange={this.changeHandler} />
                 </label>
             </div>
 
-            <div class="col-12 text-center" style={divs2}>
+            <div className="col-12 text-center" style={divs2}>
                <label>
                 Descripcion:
                 <input type="text" name="descripcion" value={descripcion} onChange={this.changeHandler} />
                 </label>
             </div>
 
-            <div class="col-12 text-center" style={divs2}>
+            <div className="col-12 text-center" style={divs2}>
                <label>
                 Precio:
                 <input type="text" name="precio" value={precio} onChange={this.changeHandler} />
@@ -63,7 +63,7 @@ export class FormProducto extends Component {
             </div>
 
 
-            <div class="col-12 text-center" style={divs2}>
+            <div className="col-12 text-center" style={divs2}>
               <input type="submit" value="Dar Alta" />
             </div>
        
