@@ -5,6 +5,7 @@ import Personaje from './componentes/Personaje'
 import Card from './componentes/Card'
 import FormSucursal from './componentes/FormSucursal'
 import FormProducto from './componentes/FormProducto'
+import Login from './componentes/Login'
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -26,7 +27,7 @@ function App() {
       <Route path='/formaSucursal' element={<FormSucursal></FormSucursal>}></Route>
       <Route path='/formaProducto' element={<FormProducto></FormProducto>}></Route>
       
-      <Route path='/' element={<Inicio></Inicio>}></Route>
+      <Route path='/'element={<Login></Login>}></Route>
       <Route path='/personaje/:id' element={<Personaje></Personaje>}></Route>
     </Routes>
     </BrowserRouter>
