@@ -23,9 +23,7 @@ export const Login = () => {
    
     return (
     <div className="row" style={margenes}>
-        <div class="col-12 text-center" >
-        <h1></h1>
-        </div> 
+         
     <div className="col-12" style={margenes}>
          <div className="row">
             <div className="col-6 text-end" >Usuario:</div>
@@ -34,18 +32,23 @@ export const Login = () => {
               onChange={(e)=>setUsuario(e.target.value)} style={ancho}></input>
             </div>
          </div>
-         <div className="row" style={margenes2}>
-            <div className="col-6 text-end">Password:</div>
+
+         <div className="row">
+            <div className="col-6 text-end" >Password:</div>
             <div className="col-6 text-star">
-              <input type="text" name="password"
-             onChange={(e)=>setPassword(e.target.value)}  style={ancho}></input>
+              <input type="text" name="Password"
+              onChange={(e)=>setUsuario(e.target.value)} style={ancho}></input>
             </div>
          </div>
-    </div>
+     </div>
 
-    <div className="col-12 text-center" style={margenes}>
-    <button onClick={mandar()}   class="btn btn-primary"  >Entrar</button>
-    </div>
+
+     <div className="row">
+            <div className="col-12 text-center" >
+              <button onClick={mandar()} className='btn btn-primary'>Entrar</button>
+              </div>
+         </div>
+
     
     </div>
   )
