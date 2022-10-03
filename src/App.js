@@ -38,7 +38,7 @@ function App() {
       <Route path='/formaCompra' element={<FormCompras></FormCompras>}></Route>
             
       <Route path='/'element={<Login></Login>}></Route>
-      <Route path='/personaje/:id' element={<Personaje></Personaje>}></Route>
+      
     </Routes>
     </BrowserRouter>
     
