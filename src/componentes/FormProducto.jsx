@@ -2,8 +2,7 @@ import axios from 'axios'
 import React, { Component } from 'react'
 const divs = {marginTop : "80px"}
 const divs2 = {marginTop : "20px"}
-
-
+const ancho ={width:"130px"}
 
 
 export class FormProducto extends Component {
@@ -38,29 +37,29 @@ export class FormProducto extends Component {
         <div className="row" style={divs}>
             
         <div className="col-12 text-center">
-               <h1>Alta de Producto</h1>
+               <h1>Alta Producto</h1>
             </div>
        
-            <div className="col-12 text-center" style={divs2}>
-               <label>
-                Codigo:
-                <input type="text" name="codigo" value={codigo} onChange={this.changeHandler} />
-                </label>
-            </div>
+            <div className="col-6 text-end" style={divs2}><label>Codigo:</label></div>
+            <div className="col-6 text-star" style={divs2}>
+            <input style={ancho} type="text" name="codigo" value={codigo} onChange={this.changeHandler} /></div>
+                
 
-            <div className="col-12 text-center" style={divs2}>
-               <label>
-                Descripcion:
-                <input type="text" name="descripcion" value={descripcion} onChange={this.changeHandler} />
-                </label>
-            </div>
+            <div className="col-6 text-end" style={divs2}><label>Descripcion:</label></div>
+            <div className="col-6 text-start" style={divs2}>
+            <input style={ancho} type="text" name="descripcion" value={descripcion} onChange={this.changeHandler} />
+              </div>
+               
 
-            <div className="col-12 text-center" style={divs2}>
-               <label>
-                Precio:
-                <input type="text" name="precio" value={precio} onChange={this.changeHandler} />
-                </label>
+            <div className="col-6 text-end " style={divs2}><label> Precio:</label></div>
+            <div className="col-6 text-start " style={divs2}>
+            <input style={ancho} type="text" name="precio" value={precio} onChange={this.changeHandler} />
             </div>
+               
+               
+                
+                
+            
 
 
             <div className="col-12 text-center" style={divs2}>

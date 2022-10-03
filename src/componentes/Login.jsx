@@ -8,16 +8,28 @@ const margenes = {marginTop : "40px"}
     const margenes3 = {marginLeft : "20px"}
     const ancho ={width:"120px"} 
 
-   
 
 export const Login = () => {
     const [usuario,setUsuario] = useState("")
     const [password,setPassword] = useState("")
-
  
-     function mandar(){
+
+    async function mandar(){
        console.log("hola")     
      let item = {usuario,password} 
+    let result = await fetch("http://localhost:8080/login",{
+     method:'POST',   
+     headers: {
+        "username":usuario,
+        "password":password
+     }
+     })
+
+     result = await result.json();
+     localStorage.setItem("user-info",JSON.stringify(result))
+    
+
+
      } 
    
    
@@ -45,7 +57,7 @@ export const Login = () => {
 
      <div className="row">
             <div className="col-12 text-center" >
-              <button onClick={mandar()} className='btn btn-primary'>Entrar</button>
+              <button onClick={mandar} className='btn btn-primary'>Entrar</button>
               </div>
          </div>
 

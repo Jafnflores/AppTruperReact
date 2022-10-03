@@ -14,33 +14,33 @@ function Card() {
   <><div className="row"> 
     <div className="col-4 text-center" style={divs}>
           <div className="card" style={cardas}>
-             
+          <img src={icono} alt="TRUPER" width="30" height="24" className="d-inline-block align-text-top"></img>
               <div className="card-body">
-                  <h5 className="card-title">Alta de Sucursal</h5>
-                  <p className="card-text">Forma para el alta de nuevos Sucursales.</p>
-                  <a href="/FormaSucursal" className="btn btn-primary">Ir al formulario</a>
+                  <h5 className="card-title">Sucursales</h5>
+                  <p className="card-text"><a href="/consultaSucursal">Consultar Sucursales.</a></p>
+                  <a href="/FormaSucursal" className="btn btn-primary">Alta de Sucursal</a>
               </div>
           </div>
       </div>
 
       <div className="col-4 text-center" style={divs}>
           <div className="card" style={cardas}>
-             
+          <img src={icono} alt="TRUPER" width="30" height="24" className="d-inline-block align-text-top"></img>
               <div className="card-body">
-                  <h5 className="card-title">Alta de Producto</h5>
-                  <p className="card-text">Forma para el alta de nuevos Sucursales.</p>
-                  <a href="/formaProducto" className="btn btn-primary">Ir al formulario</a>
+                  <h5 className="card-title">Producto</h5>
+                  <p className="card-text"><a href="/consultaProducto">Consultar Productos.</a></p>
+                  <a href="/formaProducto" className="btn btn-primary">Alta de Producto</a>
               </div>
           </div>
       </div>
 
       <div className="col-4 text-center" style={divs}>
           <div className="card" style={cardas}>
-             
+          <img src={icono} alt="TRUPER" width="30" height="24" className="d-inline-block align-text-top"></img>
               <div className="card-body">
-                  <h5 className="card-title">Alta de Sucursal</h5>
-                  <p className="card-text">Forma para el alta de nuevos Sucursales.</p>
-                  <a href="/formaOrden" className="btn btn-primary">Ir al formulario</a>
+                  <h5 className="card-title">Ordenes de Compra</h5>
+                  <p className="card-text">Consultar Ordenes.</p>
+                  <a href="/formaCompra" className="btn btn-primary">Alta de Orden</a>
               </div>
           </div>
       </div>

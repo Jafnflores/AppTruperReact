@@ -36,12 +36,12 @@ export class FormSucursal extends Component {
         <div className="row" style={divs}>
             
         <div className="col-12 text-center">
-               <h1>Alta de Sucursal</h1>
+               <h1>Alta Sucursal</h1>
             </div>
        
             <div className="col-12 text-center" style={divs2}>
                <label>
-                Sucursal:
+                Sucursal:&nbsp;&nbsp; 
                 <input type="text" name="nombre" value={nombre} onChange={this.changeHandler} />
                 </label>
             </div>
